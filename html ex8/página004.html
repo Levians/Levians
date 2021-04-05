@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias e mais mídias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <h1>Faça um teste</h1>
+    <hr>
+    <p>A imagem a seguir não é uma imagem qualquer, ela é uma imagem dinâmica. <br>
+    Oque eu fiz foi adicionar a TAG <q>picture</q> e algo muito legal de saber é que com a TAG picture, nós temos a possibilidade de adicionar a TAG <q>source:media:type</q> . <br>
+Essa TAG nos permite colocar variáveis. Como assim variáveis? <br>
+Várias imagens para vários tipos de tela, maiores, menores, médias, quanto mais imagens melhor. </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/small.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/medium.png" type="image/png">
+        <img src="imagens/big.png" alt="Imagem grande">
+    </picture>
+    <h2>Outros tipos de midia</h2>
+    <h3>Audios</h3>
+    <p>Caso tenha vontade de adicionar um audio ao seu site, talvez um site de podcast ou um resumo de uma matéria, é possível com a TAG audio. <br>
+    Exemplo</p>
+    <audio preload="metadata" controls src="imagens/sanza e triz nowa - eu e você_160k.mp3"  ></audio>
+    <h2>E se meu navegador não suportar o audio?</h2>
+    <p>HAHA meu pequeno gafanhoto, podemos deixar um link de download, legal não é?
+        <a href="imagens/sanza e triz nowa - eu e você_160k.mp3" download="sanza e triz nowa - eu e você_160k.mp3" type="audio/mpeg">Baixe aqui o audio</a></p>
+     <strong><abbr title="Página anterior"><a href="página003.html">Previous</a></abbr></strong> <br>
+     <strong><abbr title="Primeira página"><a href="index.html">First</a></abbr></strong>
+      </main>      
+</body>
+</html>

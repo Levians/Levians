@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e audios</title>
+</head>
+<body>
+    <h1>Diferentes tipos de imagens</h1>
+    <p>Existem diversos usuário e consequentemente diferentes tipos de dispositivos. <br>
+    Ou seja, para deixarmos nosso site mais dinâmico e otimizado, devemos ter diversos tipos de resoluções de imagens. <br>
+Mas lembre-se, nunca exagere no tamanho do seu arquivo.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/small.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medium.png" type="image/png">
+        <img src="imagens/big.png" alt="imagem grande">
+    </picture> 
+    <h2>Audios</h2>
+    <p>Vamos colocar audios?</p>
+    <audio src="audio/happy-mistake - Atalho.lnk" controls></audio>
+    <audio>
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+            <source src="audio/guanacast-33.ogg" type="audio/ogg">
+            <source src="audio/guanacast-33.wav" type="audio/wav">    
+    </audio> 
+    
+
+</body>
+</html>
